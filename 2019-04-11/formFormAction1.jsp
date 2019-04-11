@@ -7,8 +7,8 @@
 <section>
 <h2>JSPform</h2>
 <section>
-<h2>아이디:<%= request.getParameter("userName")%><br/></h2>
-<h2>패스워드::<% request.getParameter("userPass")%><br/></h2>
+<h2>자동차로</h2><br/>
+<h2><%=request.getParameter("fromx")%>에서<%=request.getParameter("tox")%>까지<br/></h2>
 </section>
 </section>
 </body>
