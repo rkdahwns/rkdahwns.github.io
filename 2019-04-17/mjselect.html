@@ -1,0 +1,100 @@
+<!doctype html><! -- mjselect.html -- >
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>골라보세요</title>
+<script language="javascript"> 
+function showSub(obj) {
+    f = document.forms.select_machine;
+if(obj == 1) {
+     f.SUB1.style.display = "";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+    } 
+else if(obj == 2) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     }
+else if(obj == 3) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "none";
+     }
+else if(obj == 4) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "";
+     f.SUB5.style.display = "none";
+     }
+ else if(obj == 5) {
+     f.SUB1.style.display = "none";
+     f.SUB2.style.display = "none";
+     f.SUB3.style.display = "none";
+     f.SUB4.style.display = "none";
+     f.SUB5.style.display = "";
+     }
+}
+</script>
+</head>
+<body>
+<section>
+<fieldset>
+<legend>카트라이더 대장차</legend>
+<form name="select_machine">
+<select name=" " onchange="showSub(this.options[this.selectedIndex].value);"> 
+<option value="1">엔진선택</option> 
+<option value="2">X엔진</option> 
+<option value="3">JIU엔진</option>
+<option value="4">NEW엔진</option>
+<option value="5">HT엔진</option>
+</select>
+<br>
+<select name="SUB1" style="">
+<option value=" ">엔진선택</option>
+</select>
+<select name="SUB2" style="display: none;">
+ <option value="">스펙터X</option> 
+ <option value=" ">스팅레이X</option>
+ <option value=" ">붓X</option>
+ <option value=" ">이온X</option>
+ <option value=" ">폭스X</option>
+ <option value=" ">켈베로스X</option></select>
+<select name="SUB3" style="display: none;">
+ <option value=" ">파라곤9</option>
+ <option value=" ">백기사9</option>
+ <option value=" ">흑기사9</option>
+ <option value=" ">부티9</option>
+ <option value=" ">황금기사9</option>
+ <option value=" ">황금기사영웅9</option>
+ <option value=" ">골든스톰블레이드9</option>
+ <option value=" ">골든세이버9</option>
+</select>
+<select name="SUB4" style="display: none;">
+ <option value=" ">뉴 골든 세이버LE</option>
+ <option value=" ">뉴 코튼</option>
+ <option value=" ">뉴 스토커</option>
+ <option value=" ">뉴 하운드 골드</option>
+ <option value=" ">뉴 스펙터 드래곤</option>
+ <option value=" ">뉴 스팅레이</option>
+</select>
+<select name="SUB5" style="display: none;">
+ <option value=" ">역전의 사자탈</option>
+ <option value=" ">세이버 HT</option>
+ <option value=" ">하운드 HT</option>
+ <option value=" ">코어 블리츠 HT</option>
+ <option value=" ">세이버 HT LE</option>
+</select>
+<input type="reset" value="취소">
+</form></fieldset>
+</section>
+<p>카트라이더 대장차 목록입니다. Z7아래로는 너무느려서 뺏습니다.</p>
+</body>
+</html>
